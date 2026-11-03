@@ -24,8 +24,8 @@ Matplotlib, and one command rebuilds every number and figure.
 Requires Python 3.9 or newer.
 
 ```bash
-git clone <this repository's URL>
-cd SC-Climate-Shift
+git clone https://github.com/GITGUD360/P1-data-analysis-and-visualization.git
+cd P1-data-analysis-and-visualization
 pip install -r requirements.txt
 python run_all.py
 ```
@@ -94,7 +94,7 @@ A full summary is written to [results/key_findings.md](results/key_findings.md) 
 ## Repository structure
 
 ```
-SC-Climate-Shift/
+P1-data-analysis-and-visualization/
 ├── run_all.py               runs every step in order
 ├── SC_Climate_Analysis.ipynb  the same analysis as a step-by-step notebook
 ├── requirements.txt
@@ -130,4 +130,4 @@ SC-Climate-Shift/
 
 ---
 
-*Course project by [Your Name], [Course name], [Semester].*
+*Course project by Ankit Saini, Artificial Intelligence, Dr. Songhui Yue, submitted November 1, 2026.*
