@@ -14,7 +14,7 @@ Matplotlib, and one command rebuilds every number and figure.
 | Report | [report/Project_Report.pdf](report/Project_Report.pdf) ([.docx](report/Project_Report.docx)) |
 | Slides (with speaker notes) | [presentation/SC_Climate_Presentation.pptx](presentation/SC_Climate_Presentation.pptx) ([.pdf](presentation/SC_Climate_Presentation.pdf)) |
 | Step-by-step notebook | [SC_Climate_Analysis.ipynb](SC_Climate_Analysis.ipynb) (all outputs and charts included) |
-| Presentation video | **[YouTube link, add after uploading]** |
+| Presentation video | [https://youtu.be/0NMTInDzIAs](https://youtu.be/0NMTInDzIAs) |
 
 ---
 
