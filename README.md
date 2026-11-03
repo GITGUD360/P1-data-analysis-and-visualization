@@ -13,7 +13,6 @@ Matplotlib, and one command rebuilds every number and figure.
 |---|---|
 | Report | [report/Project_Report.pdf](report/Project_Report.pdf) ([.docx](report/Project_Report.docx)) |
 | Slides (with speaker notes) | [presentation/SC_Climate_Presentation.pptx](presentation/SC_Climate_Presentation.pptx) ([.pdf](presentation/SC_Climate_Presentation.pdf)) |
-| Speaker script | [presentation/Speaker_Script.pdf](presentation/Speaker_Script.pdf) |
 | Step-by-step notebook | [SC_Climate_Analysis.ipynb](SC_Climate_Analysis.ipynb) (all outputs and charts included) |
 | Presentation video | **[YouTube link, add after uploading]** |
 
@@ -114,7 +113,7 @@ P1-data-analysis-and-visualization/
 ├── figures/                 12 charts (PNG); figures/slides/ = slide versions
 ├── results/                 result tables (CSV) + key_findings.md
 ├── report/                  project report (PDF + Word)
-└── presentation/            slides (PPTX + PDF) and speaker script
+└── presentation/            slides (PPTX + PDF, speaker notes in presenter view)
 ```
 
 ## Methods in short
