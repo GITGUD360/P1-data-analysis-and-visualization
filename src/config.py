@@ -26,8 +26,8 @@ NOAA_URL = ("https://www.ncei.noaa.gov/data/"
             "global-historical-climatology-network-daily/access/{station}.csv")
 
 # 10 long-running weather stations, grouped into South Carolina's three
-# well-known regions. Every one of them has at least 330 days of data in
-# every year from 1966 to 2025.
+# well-known regions. Each one has at least 330 days of data in nearly every
+# year from 1966 to 2025 (see results/data_quality.csv).
 STATIONS = {
     # station id       city label               region
     "USW00013880": ("Charleston (Airport)",   "Coast"),

@@ -32,7 +32,7 @@ import pandas as pd
 import config
 import utils
 
-# metric column, nice name, unit, which stations, "good" direction of the label
+# (column in the yearly table, name on the charts, unit, "temp" or "rain" stations)
 METRICS = [
     ("hot_days", "Hot days (high ≥ 95 °F)", "days/yr", "temp"),
     ("warm_nights", "Warm nights (low ≥ 75 °F)", "days/yr", "temp"),

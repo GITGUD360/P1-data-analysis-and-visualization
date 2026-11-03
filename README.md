@@ -14,6 +14,7 @@ Matplotlib, and one command rebuilds every number and figure.
 | Report | [report/Project_Report.pdf](report/Project_Report.pdf) ([.docx](report/Project_Report.docx)) |
 | Slides (with speaker notes) | [presentation/SC_Climate_Presentation.pptx](presentation/SC_Climate_Presentation.pptx) ([.pdf](presentation/SC_Climate_Presentation.pdf)) |
 | Speaker script | [presentation/Speaker_Script.pdf](presentation/Speaker_Script.pdf) |
+| Step-by-step notebook | [SC_Climate_Analysis.ipynb](SC_Climate_Analysis.ipynb) (all outputs and charts included) |
 | Presentation video | **[YouTube link – add after uploading]** |
 
 ---
@@ -38,6 +39,13 @@ python run_all.py --download
 
 Each step can also be run on its own, for example `python src/angle1_where.py`
 (run `python src/clean_data.py` first so the processed data exists).
+
+Prefer Jupyter? Open `SC_Climate_Analysis.ipynb` and choose *Run All*
+(`pip install notebook` first). It walks through every task with the charts
+inline and calls the same code as `run_all.py`.
+
+Tested on Windows with Python 3.12, both with current libraries and with the
+minimum versions in `requirements.txt`.
 
 ---
 
@@ -88,6 +96,7 @@ A full summary is written to [results/key_findings.md](results/key_findings.md) 
 ```
 SC-Climate-Shift/
 ├── run_all.py               runs every step in order
+├── SC_Climate_Analysis.ipynb  the same analysis as a step-by-step notebook
 ├── requirements.txt
 ├── src/
 │   ├── config.py            stations, years, thresholds, colours
