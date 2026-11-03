@@ -1,0 +1,81 @@
+city,region,station,then,now,metric
+Charleston (Airport),Coast,USW00013880,12.67,13.87,hot_days
+Charleston (Downtown),Coast,USW00013782,5.27,3.63,hot_days
+Beaufort,Coast,USW00093831,16.2,19.88,hot_days
+Columbia,Midlands,USW00013883,23.97,28.8,hot_days
+Florence,Midlands,USW00013744,18.0,20.47,hot_days
+Sumter,Midlands,USC00388440,19.23,13.33,hot_days
+Greenville-Spartanburg,Upstate,USW00003870,9.27,12.8,hot_days
+Anderson,Upstate,USW00093846,13.9,16.7,hot_days
+Clemson,Upstate,USC00381770,10.36,16.84,hot_days
+Rock Hill,Upstate,USC00389350,10.53,14.74,hot_days
+Charleston (Airport),Coast,USW00013880,22.53,31.9,warm_nights
+Charleston (Downtown),Coast,USW00013782,58.8,84.07,warm_nights
+Beaufort,Coast,USW00093831,32.67,41.84,warm_nights
+Columbia,Midlands,USW00013883,4.87,18.93,warm_nights
+Florence,Midlands,USW00013744,10.6,14.33,warm_nights
+Sumter,Midlands,USC00388440,2.93,6.44,warm_nights
+Greenville-Spartanburg,Upstate,USW00003870,0.77,2.3,warm_nights
+Anderson,Upstate,USW00093846,3.59,3.5,warm_nights
+Clemson,Upstate,USC00381770,0.43,1.88,warm_nights
+Rock Hill,Upstate,USC00389350,3.8,4.43,warm_nights
+Charleston (Airport),Coast,USW00013880,31.77,22.83,freeze_days
+Charleston (Downtown),Coast,USW00013782,10.63,5.7,freeze_days
+Beaufort,Coast,USW00093831,24.9,16.8,freeze_days
+Columbia,Midlands,USW00013883,59.13,45.47,freeze_days
+Florence,Midlands,USW00013744,44.97,40.97,freeze_days
+Sumter,Midlands,USC00388440,54.2,52.89,freeze_days
+Greenville-Spartanburg,Upstate,USW00003870,65.17,53.0,freeze_days
+Anderson,Upstate,USW00093846,54.21,51.7,freeze_days
+Clemson,Upstate,USC00381770,70.39,53.48,freeze_days
+Rock Hill,Upstate,USC00389350,56.17,50.91,freeze_days
+Charleston (Airport),Coast,USW00013880,252.93,267.4,freeze_free_days
+Charleston (Downtown),Coast,USW00013782,303.07,323.83,freeze_free_days
+Beaufort,Coast,USW00093831,265.6,274.48,freeze_free_days
+Columbia,Midlands,USW00013883,213.5,229.5,freeze_free_days
+Florence,Midlands,USW00013744,234.63,236.47,freeze_free_days
+Sumter,Midlands,USC00388440,225.2,234.52,freeze_free_days
+Greenville-Spartanburg,Upstate,USW00003870,211.1,224.4,freeze_free_days
+Anderson,Upstate,USW00093846,223.0,220.43,freeze_free_days
+Clemson,Upstate,USC00381770,211.86,217.68,freeze_free_days
+Rock Hill,Upstate,USC00389350,224.07,225.78,freeze_free_days
+Charleston (Airport),Coast,USW00013880,51.0,51.92,rain_total_in
+Charleston (Downtown),Coast,USW00013782,47.21,43.65,rain_total_in
+Beaufort,Coast,USW00093831,48.6,43.23,rain_total_in
+Columbia,Midlands,USW00013883,49.78,44.61,rain_total_in
+Florence,Midlands,USW00013744,44.4,44.43,rain_total_in
+Sumter,Midlands,USC00388440,48.02,46.95,rain_total_in
+Greenville-Spartanburg,Upstate,USW00003870,50.46,49.6,rain_total_in
+Anderson,Upstate,USW00093846,46.08,45.48,rain_total_in
+Clemson,Upstate,USC00381770,54.07,51.12,rain_total_in
+Rock Hill,Upstate,USC00389350,48.31,39.5,rain_total_in
+Charleston (Airport),Coast,USW00013880,3.4,3.93,heavy_rain_days
+Charleston (Downtown),Coast,USW00013782,3.27,3.53,heavy_rain_days
+Beaufort,Coast,USW00093831,3.63,3.2,heavy_rain_days
+Columbia,Midlands,USW00013883,3.8,2.73,heavy_rain_days
+Florence,Midlands,USW00013744,2.37,2.73,heavy_rain_days
+Sumter,Midlands,USC00388440,2.73,2.93,heavy_rain_days
+Greenville-Spartanburg,Upstate,USW00003870,3.07,3.43,heavy_rain_days
+Anderson,Upstate,USW00093846,2.38,2.67,heavy_rain_days
+Clemson,Upstate,USC00381770,2.97,3.33,heavy_rain_days
+Rock Hill,Upstate,USC00389350,2.93,1.96,heavy_rain_days
+Charleston (Airport),Coast,USW00013880,4.05,4.47,max_1day_rain_in
+Charleston (Downtown),Coast,USW00013782,4.38,4.03,max_1day_rain_in
+Beaufort,Coast,USW00093831,3.79,3.74,max_1day_rain_in
+Columbia,Midlands,USW00013883,3.17,3.41,max_1day_rain_in
+Florence,Midlands,USW00013744,2.99,3.43,max_1day_rain_in
+Sumter,Midlands,USC00388440,3.56,3.47,max_1day_rain_in
+Greenville-Spartanburg,Upstate,USW00003870,3.33,3.2,max_1day_rain_in
+Anderson,Upstate,USW00093846,2.72,3.16,max_1day_rain_in
+Clemson,Upstate,USC00381770,3.36,3.34,max_1day_rain_in
+Rock Hill,Upstate,USC00389350,3.22,2.79,max_1day_rain_in
+Charleston (Airport),Coast,USW00013880,19.0,19.4,longest_dry_spell
+Charleston (Downtown),Coast,USW00013782,20.17,22.33,longest_dry_spell
+Beaufort,Coast,USW00093831,19.83,20.56,longest_dry_spell
+Columbia,Midlands,USW00013883,19.6,20.93,longest_dry_spell
+Florence,Midlands,USW00013744,20.77,19.4,longest_dry_spell
+Sumter,Midlands,USC00388440,19.47,20.83,longest_dry_spell
+Greenville-Spartanburg,Upstate,USW00003870,17.43,19.57,longest_dry_spell
+Anderson,Upstate,USW00093846,19.0,19.33,longest_dry_spell
+Clemson,Upstate,USC00381770,17.3,17.97,longest_dry_spell
+Rock Hill,Upstate,USC00389350,23.07,20.93,longest_dry_spell

@@ -1,0 +1,11 @@
+rank,station,city,region,warming_f_per_decade,ci95,p_value,significant,change_over_60yrs_f,mean_1966_1995_f,mean_1996_2025_f,suspect_station,period_change_f
+1,USW00013883,Columbia,Midlands,0.582,0.169,0.0,True,3.491,63.296,64.916,False,1.62
+2,USW00003870,Greenville-Spartanburg,Upstate,0.565,0.136,0.0,True,3.392,59.997,61.765,False,1.768
+3,USW00093831,Beaufort,Coast,0.565,0.174,0.0,True,3.387,66.289,67.689,False,1.4
+4,USW00013880,Charleston (Airport),Coast,0.559,0.147,0.0,True,3.353,65.575,66.886,False,1.311
+5,USC00381770,Clemson,Upstate,0.489,0.173,0.0,True,2.931,60.308,62.196,False,1.888
+6,USW00013782,Charleston (Downtown),Coast,0.461,0.142,0.0,True,2.764,66.365,67.75,False,1.385
+7,USC00389350,Rock Hill,Upstate,0.431,0.158,0.0,True,2.589,61.312,62.713,False,1.401
+8,USW00013744,Florence,Midlands,0.413,0.2,0.0,True,2.479,63.721,64.587,False,0.866
+9,USW00093846,Anderson,Upstate,0.331,0.169,0.0,True,1.986,61.584,62.371,False,0.787
+10,USC00388440,Sumter,Midlands,-0.058,0.227,0.612,False,-0.347,63.198,62.95,True,-0.247

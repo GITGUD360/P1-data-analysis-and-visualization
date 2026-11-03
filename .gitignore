@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Large file rebuilt by run_all.py in a few seconds
+data/processed/daily_clean.csv
+
+# Office lock files
+~$*
+
+# OS
+.DS_Store
+Thumbs.db

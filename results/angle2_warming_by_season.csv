@@ -1,0 +1,5 @@
+season,highs_f_per_decade,highs_ci95,highs_p,lows_f_per_decade,lows_ci95,lows_p
+Winter,0.657,0.389,0.001,0.733,0.402,0.001
+Spring,0.302,0.252,0.02,0.534,0.244,0.0
+Summer,0.354,0.235,0.004,0.459,0.141,0.0
+Fall,0.33,0.246,0.009,0.429,0.304,0.007

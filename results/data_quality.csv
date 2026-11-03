@@ -1,0 +1,11 @@
+station,city,region,lat,lon,days_in_file,tmax_flagged_removed,tmin_flagged_removed,prcp_flagged_removed,impossible_days_removed,pct_missing_temp,pct_missing_rain,usable_temp_years,usable_rain_years
+USW00013880,Charleston (Airport),Coast,32.89945,-80.0407,21915,0,0,0,0,0.0,0.0,60,60
+USW00013782,Charleston (Downtown),Coast,32.775,-79.9239,21894,6,7,0,0,0.2,0.2,60,60
+USW00093831,Beaufort,Coast,32.48333,-80.71667,20703,8,10,0,0,1.05,1.66,55,55
+USW00013883,Columbia,Midlands,33.94225,-81.11802,21915,0,0,0,0,0.0,0.0,60,60
+USW00013744,Florence,Midlands,34.18773,-79.73079,21914,8,7,0,0,0.14,0.01,60,60
+USC00388440,Sumter,Midlands,33.935,-80.34787,21852,43,354,0,0,2.58,0.83,57,59
+USW00003870,Greenville-Spartanburg,Upstate,34.90614,-82.21253,21915,0,0,0,0,0.0,0.0,60,60
+USW00093846,Anderson,Upstate,34.498,-82.70924,21872,2,3,0,0,0.06,0.09,59,59
+USC00381770,Clemson,Upstate,34.66036,-82.82325,21887,28,685,0,0,3.28,0.31,53,60
+USC00389350,Rock Hill,Upstate,34.9378,-81.0374,21915,533,121,0,0,3.33,1.2,53,58

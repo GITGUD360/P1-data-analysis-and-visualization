@@ -1,0 +1,11 @@
+station,city,region,max_5yr_drift_f,suspect
+USW00013880,Charleston (Airport),Coast,1.26,False
+USW00013782,Charleston (Downtown),Coast,1.24,False
+USW00093831,Beaufort,Coast,1.57,False
+USW00013883,Columbia,Midlands,2.1,False
+USW00013744,Florence,Midlands,1.5,False
+USC00388440,Sumter,Midlands,5.02,True
+USW00003870,Greenville-Spartanburg,Upstate,1.33,False
+USW00093846,Anderson,Upstate,1.59,False
+USC00381770,Clemson,Upstate,1.74,False
+USC00389350,Rock Hill,Upstate,1.63,False
