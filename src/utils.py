@@ -7,6 +7,7 @@ Small helpers shared by all the analysis scripts:
   * one consistent Matplotlib style for every figure
 """
 
+import codecs
 import sys
 
 import matplotlib
@@ -18,9 +19,19 @@ from scipy import stats
 
 import config
 
-# Windows terminals sometimes cannot print symbols like ° or ≥ - don't crash on them
+# Windows terminals sometimes cannot print symbols like ≥ or →, so print a plain
+# version of them instead of crashing or showing "?"
+PLAIN = {"≥": ">=", "≤": "<=", "→": "->", "×": "x", "−": "-", "±": "+/-", "≈": "~", "°": " deg"}
+
+
+def _plain_symbols(error):
+    text = error.object[error.start:error.end]
+    return "".join(PLAIN.get(c, "?") for c in text), error.end
+
+
+codecs.register_error("plain_symbols", _plain_symbols)
 if hasattr(sys.stdout, "reconfigure"):
-    sys.stdout.reconfigure(errors="replace")
+    sys.stdout.reconfigure(errors="plain_symbols")
 
 
 # ---------------------------------------------------------------------------
