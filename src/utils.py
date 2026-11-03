@@ -39,7 +39,7 @@ def load_quality():
 
 
 def suspect_stations():
-    """Stations that failed the neighbour check in quality_check.py."""
+    """Stations that failed the neighbor check in quality_check.py."""
     path = config.RESULTS_DIR / "neighbor_check.csv"
     if not path.exists():
         return []
@@ -144,7 +144,7 @@ def set_style():
 
 
 def subtitle(ax, text):
-    """Grey one-line explanation under the title."""
+    """Gray one-line explanation under the title."""
     ax.text(0, 1.02, text, transform=ax.transAxes, fontsize=10.5,
             color=config.INK_2, va="bottom", ha="left", gid="subtitle")
 

@@ -109,7 +109,7 @@ def fig_hot_and_warm(annual, suspects):
         ax.legend(loc="lower right")
 
     w = warm.set_index("city")
-    fig.suptitle(f"Warm nights have jumped: Charleston downtown now gets "
+    fig.suptitle(f"Warm nights went up the most: downtown Charleston now gets "
                  f"{w.loc['Charleston (Downtown)', 'now']:.0f} a year "
                  f"(was {w.loc['Charleston (Downtown)', 'then']:.0f})",
                  x=0.01, y=1.04, ha="left", fontsize=15, fontweight="bold")
@@ -144,7 +144,7 @@ def fig_freeze(annual, suspects):
         ax.set_xlim(config.START_YEAR - 1, config.END_YEAR + 1)
         texts[column] = fit["per_decade"] * 6
         ax.legend(loc="upper right")
-    fig.suptitle(f"Winters are softer: about {abs(texts['freeze_days']):.0f} fewer freezing "
+    fig.suptitle(f"About {abs(texts['freeze_days']):.0f} fewer freezing "
                  f"nights and a {texts['freeze_free_days']:.0f}-day longer growing season",
                  x=0.01, y=1.04, ha="left", fontsize=15, fontweight="bold")
     fig.text(0.01, 0.975, "Statewide average of 9 trusted stations, 1966-2025 "
@@ -173,7 +173,7 @@ def fig_heavy_rain(annual):
     ax.text(0.01, 0.97, f"Trend: {fit['per_decade']:+.2f} days per decade\n"
                         f"p = {fit['p_value']:.2f}  →  not significant",
             transform=ax.transAxes, ha="left", va="top", fontsize=11, fontweight="bold")
-    ax.set_title("Heavy rain: big storm years come and go, with no clear trend (yet)")
+    ax.set_title("Heavy rain days show no clear trend")
     utils.subtitle(ax, "Average number of days with 2+ inches of rain at the 10 stations. "
                        "The largest spikes are tropical storms and hurricanes.")
     utils.save(fig, "fig11_heavy_rain")
@@ -207,9 +207,9 @@ def fig_scorecard(card):
     ax.text(109, 7.45, "TEMPERATURE", ha="right", fontsize=9, color=config.INK_MUTED,
             fontweight="bold")
     ax.text(109, 3.2, "RAIN", ha="right", fontsize=9, color=config.INK_MUTED, fontweight="bold")
-    ax.set_title("Scorecard: temperature extremes changed clearly, rain did not")
-    utils.subtitle(ax, "Statewide averages.  Coloured = significant 60-year trend (p < 0.05); "
-                       "grey = could be natural ups and downs.")
+    ax.set_title("Temperature extremes changed, rain did not")
+    utils.subtitle(ax, "Statewide averages.  Colored = significant 60-year trend (p < 0.05); "
+                       "gray = could be natural ups and downs.")
     utils.save(fig, "fig12_extremes_scorecard")
 
 

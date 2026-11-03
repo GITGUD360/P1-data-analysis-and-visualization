@@ -1,7 +1,7 @@
 """
 quality_check.py
 ----------------
-"Neighbour check" for station problems.
+"Neighbor check" for station problems.
 
 Weather stations get moved, re-sited or get new sensors. That can make a
 station look like it suddenly warmed or cooled when the real climate did not.
@@ -42,7 +42,7 @@ LABEL_OFFSET = {
 
 
 def station_map():
-    """Figure 1: where the 10 stations are, coloured by region."""
+    """Figure 1: where the 10 stations are, colored by region."""
     quality = utils.load_quality()
     utils.set_style()
     fig, ax = plt.subplots(figsize=(8.6, 6.6))
@@ -87,7 +87,7 @@ def main():
     check.to_csv(config.RESULTS_DIR / "neighbor_check.csv", index=False)
     print(check.to_string(index=False))
 
-    # ---- figure: daytime-high difference from the neighbours ------------
+    # ---- figure: daytime-high difference from the neighbors ------------
     utils.set_style()
     fig, ax = plt.subplots(figsize=(10, 5))
     suspects = check.loc[check["suspect"], "city"].tolist()
@@ -100,7 +100,7 @@ def main():
         ax.plot(diff.index, diff.values, color="#e34948", lw=2.2)
         low_year = diff.idxmin()
         ax.annotate(f"{city}: daytime highs suddenly read\n"
-                    f"{abs(diff.min()):.1f} °F colder than its neighbours",
+                    f"{abs(diff.min()):.1f} °F colder than its neighbors",
                     xy=(low_year, diff.min()), xytext=(low_year - 30, diff.min() + 0.3),
                     fontsize=10, color=config.INK,
                     arrowprops=dict(arrowstyle="-", color=config.INK_MUTED, lw=0.8))
@@ -109,9 +109,9 @@ def main():
     ax.text(1967, DRIFT_LIMIT_F - 0.1, "normal range (within 3 °F)", fontsize=9,
             color=config.INK_2, va="top")
     ax.set_xlim(config.START_YEAR, config.END_YEAR)
-    ax.set_ylabel("Station minus neighbours (°F, 5-yr average)")
-    ax.set_title("Data check: one station does not agree with its neighbours")
-    utils.subtitle(ax, "Each grey line is a station that tracks the others well. "
+    ax.set_ylabel("Station minus neighbors (°F, 5-yr average)")
+    ax.set_title("Data check: one station does not agree with its neighbors")
+    utils.subtitle(ax, "Each gray line is a station that tracks the others well. "
                        "Red = flagged and left out of statewide averages.")
     utils.save(fig, "fig02_data_quality_check")
     return check

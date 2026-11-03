@@ -65,7 +65,7 @@ HEAVY_RAIN_IN = 2.0     # a "heavy rain day": 2 inches or more in one day
 WET_DAY_IN = 0.01       # a day counts as wet if it rains 0.01 inch or more
 
 # ---------------------------------------------------------------------------
-# Plot style (colors chosen to be colour-blind safe)
+# Plot style (colors chosen to be color-blind safe)
 # ---------------------------------------------------------------------------
 REGION_COLORS = {"Coast": "#2a78d6", "Midlands": "#eb6834", "Upstate": "#1baf7a"}
 DAY_COLOR = "#eb6834"    # daytime highs -> warm orange

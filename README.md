@@ -15,7 +15,7 @@ Matplotlib, and one command rebuilds every number and figure.
 | Slides (with speaker notes) | [presentation/SC_Climate_Presentation.pptx](presentation/SC_Climate_Presentation.pptx) ([.pdf](presentation/SC_Climate_Presentation.pdf)) |
 | Speaker script | [presentation/Speaker_Script.pdf](presentation/Speaker_Script.pdf) |
 | Step-by-step notebook | [SC_Climate_Analysis.ipynb](SC_Climate_Analysis.ipynb) (all outputs and charts included) |
-| Presentation video | **[YouTube link – add after uploading]** |
+| Presentation video | **[YouTube link, add after uploading]** |
 
 ---
 
@@ -64,8 +64,8 @@ Together they move from **the average** → **its timing** → **the extremes**.
 
 ## Key findings
 
-- **Where:** South Carolina warmed **+0.49 °F per decade** (p < 0.001) – about
-  **+2.9 °F since 1966** – and every trusted station warmed significantly.
+- **Where:** South Carolina warmed **+0.49 °F per decade** (p < 0.001), about
+  **+2.9 °F since 1966**, and every trusted station warmed significantly.
   **Columbia** warmed fastest (+0.58 °F/decade), statistically tied with
   Greenville-Spartanburg, Beaufort and Charleston Airport.
 - **When:** nights warm faster than days (+0.55 vs +0.43 °F/decade), most of all
@@ -82,11 +82,11 @@ A full summary is written to [results/key_findings.md](results/key_findings.md) 
 ## Data
 
 - **Source:** NOAA National Centers for Environmental Information,
-  [Global Historical Climatology Network – Daily (GHCN-Daily)](https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily),
+  [Global Historical Climatology Network Daily (GHCN-Daily)](https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily),
   the database behind NOAA's [Past Weather](https://www.ncei.noaa.gov/access/past-weather/Charleston%2C%20South%20Carolina) pages.
 - **Download URL pattern:** `https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/access/<STATION_ID>.csv`
-- **Stations (10):** Charleston Airport, Charleston Downtown, Beaufort (Coast) ·
-  Columbia, Florence, Sumter (Midlands) · Greenville-Spartanburg, Anderson,
+- **Stations (10):** Charleston Airport, Charleston Downtown, Beaufort (Coast);
+  Columbia, Florence, Sumter (Midlands); Greenville-Spartanburg, Anderson,
   Clemson, Rock Hill (Upstate). IDs are in [src/config.py](src/config.py).
 - **Variables:** daily high (TMAX), daily low (TMIN), rain (PRCP).
 - **State outline** for the maps: [PublicaMundi us-states GeoJSON](https://github.com/PublicaMundi/MappingAPI) (`data/sc_boundary.csv`).
@@ -99,13 +99,13 @@ SC-Climate-Shift/
 ├── SC_Climate_Analysis.ipynb  the same analysis as a step-by-step notebook
 ├── requirements.txt
 ├── src/
-│   ├── config.py            stations, years, thresholds, colours
-│   ├── download_data.py     Task 1 – download the NOAA data
+│   ├── config.py            stations, years, thresholds, colors
+│   ├── download_data.py     Task 1: download the NOAA data
 │   ├── clean_data.py        cleaning + yearly measures
-│   ├── quality_check.py     station map + neighbour check   (fig 1–2)
-│   ├── angle1_where.py      Angle 1 – where                 (fig 3–6)
-│   ├── angle2_when.py       Angle 2 – when                  (fig 7–8)
-│   ├── angle3_extremes.py   Angle 3 – extremes              (fig 9–12)
+│   ├── quality_check.py     station map + neighbor check   (fig 1–2)
+│   ├── angle1_where.py      Angle 1: where                 (fig 3-6)
+│   ├── angle2_when.py       Angle 2: when                  (fig 7-8)
+│   ├── angle3_extremes.py   Angle 3: extremes              (fig 9-12)
 │   └── utils.py             trend statistics + shared Matplotlib style
 ├── data/
 │   ├── raw/                 downloaded NOAA files (trimmed to the columns used)
@@ -123,11 +123,11 @@ SC-Climate-Shift/
    NOAA's quality flags, drop impossible days, keep only years with ≥ 330 days.
 2. **Check:** compare each station with the average of the other nine; flag any
    station whose 5-year average difference drifts more than 3 °F.
-3. **Analyse:** least-squares linear trend per decade with 95% confidence interval
+3. **Analyze:** least-squares linear trend per decade with 95% confidence interval
    and p-value (`scipy.stats.linregress`), plus 1966–1995 vs 1996–2025 averages.
-4. **Visualise:** Matplotlib with one shared style – one message per chart,
-   colour-blind-safe palette, direct labels, error bars, no dual axes.
+4. **Visualize:** Matplotlib with one shared style, one message per chart,
+   color-blind-safe palette, direct labels, error bars, no dual axes.
 
 ---
 
-*Course project – [Your Name], [Course name], [Semester].*
+*Course project by [Your Name], [Course name], [Semester].*

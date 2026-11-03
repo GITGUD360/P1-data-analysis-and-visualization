@@ -15,7 +15,7 @@ Figures
   fig03_statewide_warming.png   - SC as a whole, every year vs. the 1966-95 normal
   fig04_warming_rate_by_city.png - ranking of the 10 cities
   fig05_warming_map.png          - the same ranking on a map
-  fig06_warming_stripes.png      - every city, every year, as coloured stripes
+  fig06_warming_stripes.png      - every city, every year, as colored stripes
 """
 
 import matplotlib.pyplot as plt
@@ -111,7 +111,7 @@ def fig_ranking(table):
                         for c, s in zip(t["city"], t["suspect_station"])])
     ax.axvline(0, color=config.INK_MUTED, lw=0.8)
     ax.grid(axis="y", visible=False)
-    ax.set_xlabel("Warming rate, °F per decade (1966-2025)   ·   bars show 95% confidence interval")
+    ax.set_xlabel("Warming rate, °F per decade (1966-2025). Bars show the 95% confidence interval.")
     handles = [plt.Rectangle((0, 0), 1, 1, color=config.REGION_COLORS[r]) for r in config.REGIONS]
     ax.set_xlim(-0.35, 1.0)
     ax.legend(handles, config.REGIONS, loc="lower right", title="Region")
@@ -179,7 +179,7 @@ def fig_stripes(annual, table):
     bar = fig.colorbar(image, ax=ax, pad=0.015, fraction=0.03)
     bar.set_label("°F vs. the city's 1966-1995 average")
     bar.outline.set_visible(False)
-    ax.set_title("Warming stripes: blue years fade, red years take over")
+    ax.set_title("Warming stripes for each city, 1966-2025")
     utils.subtitle(ax, "Each square = one city in one year. Cities sorted from fastest "
                        "warming (top) to slowest. White = missing year.")
     utils.save(fig, "fig06_warming_stripes")
